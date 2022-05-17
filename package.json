@@ -7,7 +7,8 @@
     "build": "node ace build --production",
     "start": "node server.js",
     "lint": "eslint . --ext=.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "node ace test"
   },
   "eslintConfig": {
     "parser": "typescript-eslint-parser",
@@ -50,6 +51,7 @@
     "@japa/preset-adonis": "^1.0.15",
     "@japa/runner": "^2.0.7",
     "@types/proxy-addr": "^2.0.0",
+    "@types/source-map-support": "^0.5.4",
     "@typescript-eslint/parser": "^5.24.0",
     "adonis-preset-ts": "^2.1.0",
     "eslint": "^8.15.0",
