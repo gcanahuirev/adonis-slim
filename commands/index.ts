@@ -16,6 +16,6 @@ import Application from '@ioc:Adonis/Core/Application';
 | 2. We must ignore this file to avoid getting into an infinite loop
 |
 */
-export default listDirectoryFiles(process.cwd(), Application.appRoot, [
+export default listDirectoryFiles(__dirname, Application.appRoot, [
   './commands/index',
 ]);

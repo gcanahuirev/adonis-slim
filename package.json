@@ -1,5 +1,5 @@
 {
-  "name": "adonis-slim",
+  "name": "smcore",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -49,6 +49,7 @@
     "@adonisjs/assembler": "^5.6.2",
     "@japa/preset-adonis": "^1.0.15",
     "@japa/runner": "^2.0.7",
+    "@types/proxy-addr": "^2.0.0",
     "@typescript-eslint/parser": "^5.24.0",
     "adonis-preset-ts": "^2.1.0",
     "eslint": "^8.15.0",
