@@ -1,18 +1,18 @@
 {
   "typescript": true,
-  "commands": ["./commands", "@adonisjs/core/build/commands/index.js"],
+  "commands": ["./src/cmd", "@adonisjs/core/build/commands/index.js"],
   "exceptionHandlerNamespace": "App/Exceptions/Handler",
   "aliases": {
-    "App": "app",
-    "Config": "config",
-    "Database": "database",
-    "Contracts": "contracts"
+    "App": "./src/app",
+    "Config": "./src/config",
+    "Database": "./src/database",
+    "Contracts": "./src/contracts"
   },
-  "preloads": ["./start/routes", "./start/kernel"],
-  "providers": ["./providers/AppProvider", "@adonisjs/core"],
+  "preloads": ["./src/start/routes", "./src/start/kernel"],
+  "providers": ["./src/providers/AppProvider", "@adonisjs/core"],
   "metaFiles": [
     {
-      "pattern": "public/**",
+      "pattern": "src/public/**",
       "reloadServer": false
     }
   ],
@@ -26,5 +26,19 @@
       }
     ]
   },
-  "testProviders": ["@japa/preset-adonis/TestsProvider"]
+  "testProviders": ["@japa/preset-adonis/TestsProvider"],
+  "directories": {
+    "config": "src/config",
+    "public": "src/public",
+    "contracts": "src/contracts",
+    "providers": "src/providers",
+    "database": "src/database",
+    "migrations": "src/database/migrations",
+    "seeds": "src/database/seeders",
+    "resources": "src/resources",
+    "views": "src/resources/views",
+    "start": "src/start",
+    "tmp": "src/tmp",
+    "tests": "tests"
+  }
 }

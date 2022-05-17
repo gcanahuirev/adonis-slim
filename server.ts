@@ -14,6 +14,9 @@ import 'reflect-metadata';
 import sourceMapSupport from 'source-map-support';
 import { Ignitor } from '@adonisjs/core/build/standalone';
 
-sourceMapSupport.install({ handleUncaughtExceptions: false });
+sourceMapSupport.install({
+  handleUncaughtExceptions: false,
+  environment: 'node',
+});
 
-new Ignitor(__dirname).httpServer().start();
+new Ignitor(process.cwd()).httpServer().start();
